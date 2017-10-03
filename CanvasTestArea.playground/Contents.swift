@@ -20,10 +20,21 @@
 import Cocoa
 import PlaygroundSupport
 // Create a new canvas
+
 let canvas = Canvas(width: 500, height: 500)
-canvas.drawRectangle(centreX: 250, centreY: 2050, width: 500, height: 500)
+
+canvas.fillColor = Color.blue
+canvas.drawRectangle(centreX: 250, centreY: 250, width: 500, height: 500)
+
+
+
+
+
+
 canvas.drawRectangle(centreX: 250, centreY: 2050, width: 500, height: 500)
 // Draw a circle at the origin with radius of 50 pixels
+canvas.fillColor=Color.blue
+canvas.drawRectangle(centreX: 250, centreY: 2050, width: 500, height: 500)
 canvas.drawEllipse(centreX: 0, centreY: 0, width: 50, height: 50)
 
 // Show where the origin is
@@ -33,13 +44,19 @@ canvas.drawAxes()
 
 // Draw a Semi-circular at the middle
 canvas.lineColor = Color.yellow
-canvas.drawLine(fromX: 70, fromY: 500, toX: 375, toY: 500)
-canvas.drawLine(fromX: 70, fromY: 480, toX: 500, toY: 400)
-canvas.drawLine(fromX: 70, fromY: 460, toX: 500, toY: 300)
-canvas.drawLine(fromX: 60, fromY: 440, toX: 500, toY: 200)
-canvas.drawLine(fromX: 20, fromY: 430, toX: 500, toY: 100)
-canvas.drawLine(fromX: 10, fromY: 430, toX: 390, toY: 0)
-canvas.drawLine(fromX: 5, fromY: 430, toX: 100, toY: 0)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 100, toY: 500)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 200, toY: 0, lineWidth: 5)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 300, toY: 0, lineWidth: 5)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 400, toY: 0, lineWidth: 5)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 400, toY: 0, lineWidth: 5)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 500, toY: 40, lineWidth: 5)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 600, toY: 70, lineWidth: 5)
+canvas.drawLine(fromX: 5, fromY: 500, toX: 900, toY: 50, lineWidth: 5)
+canvas.drawLine(fromX: 5, fromY: 500, toX: 1100, toY: 30, lineWidth: 5)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 70, toY: 20, lineWidth: 5)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 1400, toY: 30, lineWidth: 5)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 1600, toY: 35, lineWidth: 5)
+canvas.drawLine(fromX: 0, fromY: 500, toX: 150, toY: 0, lineWidth: 5)
 canvas.fillColor = Color.red
 canvas.drawEllipse(centreX: 250, centreY: 0, width: 500, height: 500)
 canvas.fillColor = Color.orange
@@ -62,7 +79,7 @@ canvas.drawEllipse(centreX: 480, centreY: 470, width: 130, height: 130)
 canvas.fillColor = Color.yellow
 canvas.drawEllipse(centreX: 25, centreY: 475, width: 100, height: 100)
 
-canvas.drawLine(fromX: 290, fromY: 90, toX: 380, toY: 0)
+canvas.drawLine(fromX: 290, fromY: 90, toX: 350, toY: 0, lineWidth: 5)
 
 //Add a rectangle to the top of the screen
 
